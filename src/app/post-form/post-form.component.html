@@ -1,0 +1,23 @@
+<H3>Child</H3>    
+
+<button (click)="toggleDisplay()"  >toggle add post</button>
+
+@if(display) {
+<div class = "child">
+
+<h3>Add Post</h3>
+<p> Title:</p>
+
+<input type = "text" [(ngModel)]="formPost.title" />
+
+<p> Thought:</p>
+
+<input type="text" [(ngModel)] = "formPost.thought">
+
+<button (click)="submitForm()">Add</button>
+
+</div>
+
+}
+
+
